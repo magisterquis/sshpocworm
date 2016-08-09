@@ -19,15 +19,11 @@ import (
  *****************/
 var targets = []string{
 	/* Put target IP addresses, hostnames, or CIDR ranges here */
-	"1.1.1.4/26",
-	"google.com",
-	"irc.freenode.net",
-	"yahoo.com:22",
 
 	/* RFC1918 ranges */
-	//"10.0.0.0/8",
-	//"172.16.0.0/12",
-	//"192.168.0.0/16",
+	"10.0.0.0/8",
+	"172.16.0.0/12",
+	"192.168.0.0/16",
 }
 
 /* Number of targets to attack in parallel */
@@ -40,13 +36,10 @@ var delay = "1s"
 
 /* Username / Password pairs to try */
 var creds = []Credpair{
-	{"magisterquis", "testing"},
-	{"kd5pbo", "testing"},
-	{"theseshouldallfailIhope", "testing"},
-	//{"root", "root"},
-	//{"root", "password"},
-	//{"root", "123456"},
-	//{"test", "test"},
+	{"root", "root"},
+	{"root", "password"},
+	{"root", "123456"},
+	{"test", "test"},
 }
 
 /* SSH version string to send */
