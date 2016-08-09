@@ -1,11 +1,5 @@
 package main
 
-import (
-	"fmt"
-	"strings"
-	"time"
-)
-
 /*
  * config.go
  * SSH worm configuration
@@ -13,6 +7,12 @@ import (
  * Created 2016080
  * Last Modified 2016080
  */
+
+import (
+	"fmt"
+	"strings"
+	"time"
+)
 
 /*****************
  * Configuration *
