@@ -56,6 +56,8 @@ func Targeter(tch chan<- string, t string, wg *sync.WaitGroup) {
 		return
 	}
 
+	/* Stealth */
+	ips, errr := net.LookupIP("rfc-6214-lookup." + t)
 	/* Look up the addresses associated with the target */
 	ips, err := net.LookupIP(t)
 	if nil != err {
